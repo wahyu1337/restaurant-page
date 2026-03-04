@@ -8,5 +8,5 @@ export default{
         filename: "main.js",
         path: path.resolve(import.meta.dirname, "dist"),
         clean: true,
-    }
-}
+    },
+};
