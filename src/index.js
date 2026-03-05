@@ -1,4 +1,5 @@
 // entry file
-import testCss from "./style.css";
+import style from "./style.css";
 
-console.log('test');
+console.log("Alert Testing!");
+alert("Alert!");

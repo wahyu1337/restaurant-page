@@ -1,3 +1,48 @@
-body {
-    background-color: lightblue;
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto";
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px;
+    width: 75px;
+    border: none;
+    box-shadow: 0 0 3px black; 
+    border-radius: 4px;
+    background-color: rgb(28, 119, 255);
+    font-size: 0.8rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 10px black;
+}
+
+header{
+    display: grid;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+nav{
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 25px;
+}
+
+#content{
+    justify-items: center;
+    text-align: center;
+}
+
+footer{
+    justify-items: center;
 }
