@@ -15,4 +15,12 @@ export default{
             template: "./src/template.html",
         }),
     ],
+    module: {
+        rules:[
+            {   // css
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 };
