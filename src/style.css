@@ -1,3 +1,6 @@
+ /* google font (api) */
+ @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap");
+ 
  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
@@ -5,6 +8,7 @@
             --surface: #1a1814;
             --gold: #c9a96e;
             --gold-light: #e8cfa0;
+            --gold-dark: #927b50;
             --text: #e8e0d5;
             --muted: #7a7060;
         }
@@ -200,7 +204,7 @@
             padding: 20px 0 24px;
             position: relative;
             z-index: 1;
-            border-top: 1px solid rgba(201,169,110,0.1);
+            border-top: 1px solid rgba(228, 182, 98, 0.1);
             animation: fadeUp 1s ease 0.4s both;
         }
 
@@ -208,7 +212,7 @@
             font-size: 0.65rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: rgba(122,112,96,0.5);
+            color: var(--gold-dark);
         }
 
         @keyframes fadeDown {
