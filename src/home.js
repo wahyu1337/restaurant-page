@@ -1,8 +1,10 @@
-import forkSpoonImg from "./asset/home-pict2.png";
+import background from "./asset/background2.png";
 
 const home = (function() {
     // Current year for footer
     const currentYear = new Date().getFullYear();
+    const backgroundImg = document.createElement("img");
+    backgroundImg.src = background;
 
     // DOM Manipulation
     // main content
@@ -26,10 +28,6 @@ const home = (function() {
     welcomeTitle.textContent = "Welcome to the Restaurant";
     greetingTitle.textContent = "Delicious food and greate atmosphere.";
     footerTitle.textContent = `© ${currentYear} WAYS. ALL RIGHTS RESERVED` ;
-
-    // img src
-    forkSpoon.src = forkSpoonImg;
-    forkSpoon.alt = "Gold cutlery";
 
     // append DOM
     // EST

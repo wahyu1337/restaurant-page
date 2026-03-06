@@ -10,7 +10,7 @@
             --gold-light: #e8cfa0;
             --gold-dark: #927b50;
             --text: #e8e0d5;
-            --muted: #7a7060;
+            --muted: #b99d6b;
         }
 
         body {
@@ -20,9 +20,13 @@
             font-family: 'Jost', sans-serif;
             font-weight: 300;
             height: 100vh;
+            width: 100vw;
             background-color: var(--bg);
             color: var(--text);
             overflow: hidden;
+            background-image: url("asset/background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         /* Ambient background texture */
@@ -61,8 +65,8 @@
             border-radius: 0;
             background: transparent;
             font-family: 'Jost', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 400;
+            font-size: 1rem;
+            font-weight: 900;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: var(--muted);
@@ -96,7 +100,7 @@
 
         .eyebrow {
             font-family: 'Jost', sans-serif;
-            font-size: 0.65rem;
+            font-size: 1rem;
             letter-spacing: 0.35em;
             text-transform: uppercase;
             color: var(--gold);
@@ -115,7 +119,7 @@
 
         h2 {
             font-family: 'Cormorant Garamond', serif;
-            font-weight: 300;
+            font-weight: 500;
             font-size: clamp(2.4rem, 5vw, 3.8rem);
             line-height: 1.1;
             color: var(--text);
@@ -128,7 +132,8 @@
         }
 
         p {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
+            font-weight: 400;
             letter-spacing: 0.08em;
             color: var(--muted);
             max-width: 340px;
@@ -222,7 +227,7 @@
         }
 
         #footer p {
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: var(--gold-dark);
