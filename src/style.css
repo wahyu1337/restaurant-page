@@ -135,6 +135,19 @@
             line-height: 1.8;
         }
 
+        #content img {
+            width: clamp(80px, 10vw, 130px);
+            opacity: 0.88;
+            filter: drop-shadow(0 8px 24px rgba(201, 169, 110, 0.25));
+            animation: floatUpDown 4s ease-in-out infinite;
+            margin: 4px 0;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% { transform: translateY(0px); }
+            50%       { transform: translateY(-8px); }
+        }
+
         .cta-row {
             display: flex;
             gap: 16px;
