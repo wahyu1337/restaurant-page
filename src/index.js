@@ -1,6 +1,6 @@
 // entry file
 // reset app
-import { reset } from "./resetApp.js";
+import { resetPage } from "./resetApp.js";
 
 // home
 import style from "./style.css";
@@ -15,6 +15,7 @@ btnHome.addEventListener("click", function() {
    // logs
    console.log("Clicking Home Pages...");
    //call the home func
+   resetPage();
    home();
    // add the background after switch from another pages
    document.body.style.backgroundImage = `url('${backgroundImg}')`;
@@ -27,6 +28,7 @@ btnAbout.addEventListener("click", function() {
    // logs
    console.log("Clicking About Pages...");
    // call the home func
+   resetPage();
    about();
    // change or removing the background
    document.body.style.backgroundImage = "url()";
