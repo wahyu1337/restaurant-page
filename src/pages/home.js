@@ -1,6 +1,6 @@
-import backgroundImg from "./asset/background2.png";
+import backgroundImg from "../asset/background2.png";
 
-const home = (function() {
+const home = function() {
     // Current year for footer
     const currentYear = new Date().getFullYear();
 
@@ -12,13 +12,13 @@ const home = (function() {
     // main title 
     const welcomeTitle = document.createElement("h2");
     const greetingTitle = document.createElement("p");
-    const forkSpoon = document.createElement('img');
     // footer
     const footerDiv = document.getElementById("footer");
     const footerTitle = document.createElement("p");
     
     // classList add
     estDiv.classList.add("eyebrow");
+    footerTitle.classList.add("footer-title")
     
     // text Content
     estDiv.textContent = "EST. 2026";
@@ -32,12 +32,10 @@ const home = (function() {
     // WELCOME Content
     mainContent.appendChild(welcomeTitle);
     mainContent.appendChild(greetingTitle);
-    mainContent.appendChild(forkSpoon);
 
     // footer content
     footerDiv.appendChild(footerTitle);
-    
-})();
-
+};
+home();
 // export var
-export {home, backgroundImg};
+export {home};
