@@ -19,11 +19,12 @@
             justify-content: space-between;
             font-family: 'Jost', sans-serif;
             font-weight: 300;
-            height: 100vh;
+            min-height: 100vh;
             width: 100vw;
             background-color: var(--bg);
             color: var(--text);
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
             background-image: url("asset/background2.png");
             background-size: cover;
         }
@@ -239,4 +240,73 @@
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ABOUT PAGES */
+        .aboutInfo {
+            display: grid;
+            gap: 120px;
+            justify-items: center;
+            border: 0.5px solid var(--gold-dark);
+            padding: 60px 200px 80px;  
+            margin-top: 80px;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .about-header {            
+            left: 50%;
+            top: -13px;
+            text-align: center;
+            padding: 0 20px;
+            transform: translateX(-50%);
+            position: absolute;
+            background: transparent;
+        }
+
+        .about-header p {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--gold);
+            cursor: default;
+            max-width: none;
+            white-space: nowrap;
+            text-shadow: 0 0 12px var(--bg), 0 0 8px var(--bg);
+    }   
+
+        .founder, .email, .number {
+            display: grid;
+            gap: 12px;
+            justify-items: center;
+            border: 1px solid var(--gold-dark);
+            padding: 50px;
+            border-radius: 20px;
+            width: 500px;
+        }     
+
+        .founder p:first-of-type, .email p:first-of-type, .number p:first-of-type{
+            color: var(--gold);
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: default;
+        }
+
+        .founder p{
+            font-size: 1.4rem;
+        }
+
+        .email p {
+            font-size: 1.2rem;
+        }
+
+        .number p {
+            font-size: 1.2rem;
+        }
+        
+        .founder p, .email p, .number p{
+            color: var(--gold-dark);
+            max-width: none;
         }

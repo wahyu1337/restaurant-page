@@ -24,7 +24,7 @@ const home = function() {
     estDiv.textContent = "EST. 2026";
     welcomeTitle.textContent = "Welcome to the Restaurant";
     greetingTitle.textContent = "Delicious food and greate atmosphere.";
-    footerTitle.textContent = `© ${currentYear} WAYS. ALL RIGHTS RESERVED` ;
+    footerTitle.textContent = `© ${currentYear} WAYS. ALL RIGHTS RESERVED`;
 
     // append DOM
     // EST
@@ -36,6 +36,6 @@ const home = function() {
     // footer content
     footerDiv.appendChild(footerTitle);
 };
-home();
+
 // export var
 export {home};
