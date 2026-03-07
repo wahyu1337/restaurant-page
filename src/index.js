@@ -1,8 +1,9 @@
 // entry file
 // home
-import styleHome from "./home.css";
+import style from "./style.css";
 import home from "./home.js";
 import backgroundImg from "./asset/background2.png"
+// about
 
 // Event Listener Home
 const btnHome = document.getElementById("home");
