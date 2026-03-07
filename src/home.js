@@ -1,17 +1,14 @@
-import background from "./asset/background2.png";
+import backgroundImg from "./asset/background2.png";
 
 const home = (function() {
     // Current year for footer
     const currentYear = new Date().getFullYear();
-    const backgroundImg = document.createElement("img");
-    backgroundImg.src = background;
 
     // DOM Manipulation
     // main content
     const mainContent = document.getElementById("content");
     // est
     const estDiv = document.createElement("div");
-    const estTitle = document.createElement("p");
     // main title 
     const welcomeTitle = document.createElement("h2");
     const greetingTitle = document.createElement("p");
@@ -42,6 +39,5 @@ const home = (function() {
     
 })();
 
-
 // export var
-export {home};
+export {home, backgroundImg};

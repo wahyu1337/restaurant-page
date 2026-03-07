@@ -12,7 +12,7 @@
             --text: #e8e0d5;
             --muted: #b99d6b;
         }
-
+        /* default body with home image */
         body {
             display: flex;
             flex-direction: column;
@@ -24,8 +24,7 @@
             background-color: var(--bg);
             color: var(--text);
             overflow: hidden;
-            background-image: url("asset/background.png");
-            background-repeat: no-repeat;
+            background-image: url("asset/background2.png");
             background-size: cover;
         }
 
