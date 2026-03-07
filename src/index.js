@@ -1,7 +1,7 @@
 // entry file
 // home
 import style from "./style.css";
-import home from "./home.js";
+import home from "./pages/home.js";
 import backgroundImg from "./asset/background2.png"
 // about
 
