@@ -245,37 +245,20 @@
         /* ABOUT PAGES */
         .aboutInfo {
             display: grid;
+            border-color: var(--gold-dark);
             gap: 120px;
             justify-items: center;
-            border: 0.5px solid var(--gold-dark);
-            padding: 60px 200px 80px;  
+            padding: 100px 250px;  
             margin-top: 80px;
             margin-bottom: 80px;
             position: relative;
         }
 
-        .about-header {            
-            left: 50%;
-            top: -13px;
-            text-align: center;
-            padding: 0 20px;
-            transform: translateX(-50%);
-            position: absolute;
-            background: transparent;
+        .aboutInfo legend {
+            color: var(--gold-dark);
+            font-family: "Josh", "sans-serif";
+            font-size: 1.5rem;
         }
-
-        .about-header p {
-            font-family: 'Jost', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 400;
-            letter-spacing: 0.4em;
-            text-transform: uppercase;
-            color: var(--gold);
-            cursor: default;
-            max-width: none;
-            white-space: nowrap;
-            text-shadow: 0 0 12px var(--bg), 0 0 8px var(--bg);
-    }   
 
         .founder, .email, .number {
             display: grid;

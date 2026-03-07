@@ -37,5 +37,8 @@ const home = function() {
     footerDiv.appendChild(footerTitle);
 };
 
+// default pages
+home();
+
 // export var
 export {home};

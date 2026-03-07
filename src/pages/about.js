@@ -10,9 +10,9 @@ function about(){
 
     // DOM
     const content = document.querySelector("#content");
-        const aboutInfo = document.createElement("div");
+        const aboutInfo = document.createElement("fieldset");
         // contact about
-        const aboutHeader = document.createElement("div");
+        const aboutHeader = document.createElement("legend");
             const aboutTitle = document.createElement("p");
         // contact founder
         const founder = document.createElement("div");
@@ -41,7 +41,7 @@ function about(){
 
     // content text
     // about, founder, email
-    aboutTitle.textContent =  "ABOUT US";
+    aboutHeader.textContent = "ABOUT US";
     founderTitle.textContent = "FOUNDER";
     founderName.textContent = "Wahyu Isnaeni";
     emailTitle.textContent = "EMAIL";
@@ -69,6 +69,4 @@ function about(){
     // footer
     footer.appendChild(footerTitle);
 }
-
-about();
 export {about};
