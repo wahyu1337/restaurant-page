@@ -9,6 +9,7 @@
             --gold: #c9a96e;
             --gold-light: #e8cfa0;
             --gold-dark: #927b50;
+            --gold-dark-muted: rgba(146, 123, 80, 0.2);
             --text: #e8e0d5;
             --muted: #b99d6b;
         }
@@ -268,6 +269,82 @@
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* MENUPAGES */
+
+        .menu-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 80px;
+            padding: 40px 100px;
+            width: 100%;
+        }
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .menu-wrapper {
+                grid-template-columns: 1fr;
+                padding: 40px 60px;
+            }
+        }
+
+        /* mobile */
+        @media (max-width: 720px) {
+            .menu-wrapper {
+                grid-template-columns: 1fr;
+                padding: 10px 20px;
+            }
+            .menu-item {
+                min-width: unset;
+                width: 100%;
+            }
+        }
+
+        .h2menu {
+            margin-top: 80px;
+            align-self: center;
+            color: var(--gold-dark);
+        }
+
+        .menu-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-section h3 {
+            color: var(--gold-dark);
+            font-family: 'Jost', sans-serif;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            padding: 16px 0 8px;
+            text-align: start;
+            cursor: default;
+        }
+
+       .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gold-dark-muted);
+            color: var(--text);
+            letter-spacing: 0.05em;
+            min-width: 400px;
+            transition: 0.2s;
+        }
+
+        .menu-item span:last-child {
+            color: var(--gold);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;            
+        }
+
+        .menu-item:hover {
+            cursor: default;
+            scale: 1.05;
+            box-shadow: rgba(226, 167, 56, 0.07);
         }
 
         /* ABOUT PAGES */

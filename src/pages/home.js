@@ -27,12 +27,9 @@ const home = function() {
     footerTitle.textContent = `© ${currentYear} WAYS. ALL RIGHTS RESERVED`;
 
     // append DOM
-    // EST
     mainContent.appendChild(estDiv);
-    // WELCOME Content
     mainContent.appendChild(welcomeTitle);
     mainContent.appendChild(greetingTitle);
-
     // footer content
     footerDiv.appendChild(footerTitle);
 };
