@@ -1,6 +1,8 @@
 import {home} from "./home.js";
 
 function about(){
+    // about btn
+    const btnAbout = document.querySelector("#about");
     // get the year
     const currentYear = new Date().getFullYear();
     // delete the background

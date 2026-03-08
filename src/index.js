@@ -17,6 +17,8 @@ btnHome.addEventListener("click", function() {
    //call the home func
    resetPage();
    home();
+   // // change button color on current's page
+   btnHome.style.backgroundColor = "rgba(201,169,110,0.07)";
    // add the background after switch from another pages
    document.body.style.backgroundImage = `url('${backgroundImg}')`;
    document.body.style.backgroundSize  = "cover";
@@ -30,6 +32,10 @@ btnAbout.addEventListener("click", function() {
    // call the home func
    resetPage();
    about();
+   // // change button color on current's page
+   btnAbout.style.backgroundColor = "rgba(201,169,110,0.07)";
    // change or removing the background
    document.body.style.backgroundImage = "url()";
 });
+
+export {btnAbout, btnHome};
