@@ -4,6 +4,7 @@ function resetPage() {
 
     // reset flex direction after switch menu
     content.style.alignItems = "";
+    document.body.style.overflowX = "";
 
     // Delete all the child
     content.replaceChildren();
