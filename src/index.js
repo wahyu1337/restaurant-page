@@ -53,19 +53,18 @@ btnAbout.addEventListener("click", function() {
    });   
 });
 
-// event listener menu
-// const btnMenu = document.getElementById("menu");
-// btnMenu.addEventListener("click", function() {
-//    transitionTo(() => {
-//       // logs
-//       console.log("Clicking About Pages...");
-//       resetPage();
-//       menu();
-//       // change button color on current's page
-//       btnHome.style.backgroundColor = "transparent";
-//       btnMenu.style.backgroundColor = "rgba(201,169,110,0.07)";
-//       btnAbout.style.backgroundColor = "transparent";
-//       // change or removing the background
-//       document.body.style.backgroundImage = "url()";
-//    });   
-// });
+const btnMenu = document.getElementById("menu");
+btnMenu.addEventListener("click", function() {
+   transitionTo(() => {
+      // logs
+      console.log("Clicking About Pages...");
+      resetPage();
+      menu();
+      // change button color on current's page
+      btnHome.style.backgroundColor = "transparent";
+      btnMenu.style.backgroundColor = "rgba(201,169,110,0.07)";
+      btnAbout.style.backgroundColor = "transparent";
+      // change or removing the background
+      document.body.style.backgroundImage = "url()";
+   });   
+});
