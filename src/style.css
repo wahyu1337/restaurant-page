@@ -31,6 +31,20 @@
             transition: background-image 0.5s ease;
         }
 
+        /* tablet */
+        @media (max-width: 1024px) {
+            body {
+                overflow-x: auto;
+            }
+        }
+
+        /* mobile */
+        @media (max-width: 720px) {
+            body {
+                overflow-x: auto;
+            }
+        }
+
         /* Ambient background texture */
         body::before {
             content: '';
@@ -357,6 +371,7 @@
             margin-top: 80px;
             margin-bottom: 80px;
             position: relative;
+            border-radius: 10px;
         }
 
         .aboutInfo legend {
@@ -373,7 +388,13 @@
             padding: 50px;
             border-radius: 20px;
             width: 500px;
+            transition: 0.15s;
         }     
+
+        .founder:hover, .email:hover, .number:hover {
+            cursor: default;
+            scale: 1.1;
+        }
 
         .founder p:first-of-type, .email p:first-of-type, .number p:first-of-type{
             color: var(--gold);

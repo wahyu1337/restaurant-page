@@ -33,7 +33,6 @@ function menu() {
     const currentYear = new Date().getFullYear();
     // reset background & enable horizontal scroll
     document.body.style.backgroundImage = "url()";
-    document.body.style.overflowX = "auto";
 
     const content = document.getElementById("content");
     content.style.alignItems = "flex-start";
