@@ -4,7 +4,10 @@
   "description": "NPM package:\r npm init -y --init-type=module\r npm install --save-dev webpack webpack-cli\r npm install --save-dev html-webpack-plugin\r npm install --save-dev style-loader css-loader\r npm install --save-dev html-loader\r npm install --save-dev webpack-dev-server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack seve",
+    "deploy": "git subtree push --prefix dist wahyu1337 gh-pages" 
   },
   "keywords": [],
   "author": "Ways",
