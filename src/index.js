@@ -10,7 +10,7 @@ import {menu} from "./pages/menu.js";
 import {about} from "./pages/about.js";
 
 //img
-import backgroundImg from "./asset/background2.png";
+import backgroundImg from "./asset/background2.webp";
 // preload cache img
 const preloadBg = document.createElement("img");
 preloadBg.src = backgroundImg;

@@ -26,7 +26,7 @@
             color: var(--text);
             overflow-y: auto;
             overflow-x: hidden;
-            background-image: url("asset/background2.png");
+            background-image: url("asset/background2.webp");
             background-size: cover;
             transition: background-image 0.5s ease;
         }

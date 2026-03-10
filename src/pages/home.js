@@ -1,4 +1,4 @@
-import backgroundImg from "../asset/background2.png";
+import backgroundImg from "../asset/background2.webp";
 
 const home = function() {
     // Current year for footer
